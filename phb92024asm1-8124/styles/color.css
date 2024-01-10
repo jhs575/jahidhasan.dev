@@ -1,0 +1,27 @@
+.white{
+    color: white;
+}
+.bg-white{
+    background-color: #fff;
+}
+.red{
+    color: #f00;
+}
+.bg-red{
+    background-color: #f00;
+}
+.black{
+    color: black;
+}
+.bg-black{
+    background-color: black;
+}
+.bg-light-pink {
+    border-radius: 16px;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
+}
+.bg-pink{
+    background-color: #FFF2F2;
+    border-radius: 16px;
+}
+

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+    
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(./Image/racing_car_2.png);
+            min-height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+        .wrapper{
+            width: 528px;
+            background: transparent ;
+            color: #fff;
+            border-radius: 10px;
+        }
+        .wrapper h1 {
+            font-size: 36px;
+            text-align: center;
+        }
+        .wrapper .input-box{
+            position: relative;
+            width: 100%;
+            height: 42px;
+            margin: 30px 0; 
+        }
+        .input-box input{
+            width: 100%;
+            height: 42px;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid rgb(255, 255, 255, .2);
+            border-radius: 0.375rem;
+            font-size: 16px;
+            color: #fff;
+            padding: 20px 45px 20px 20px;
+        }
+        .input-box input::placeholder {
+            color: #ffffff;
+        }
+        .input-box i{
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(50%);
+            font-size: 20px;
+        }
+        .remember-forgot{
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+            margin: 15px 0 15px;
+        }
+        .remember-forgot label input {
+            accent-color: #fff;
+            margin-right: 3px;
+        }
+        .remember-forgot a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .remember-forgot a :hover {
+            text-decoration: underline;
+        }
+        .wrapper .register-link{
+            text-align: left;
+            padding-top: 10px;
+        }
+        .register-link p a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .mail{
+            padding-left: 5px;
+        }
+        .uppercase{
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+            text-align: center;
+            font-size: inherit;
+        }
+        
+        .g-img{
+            width: 30px;
+            fill: #f1961f;
+        }
+        .wrapper .btn-l {
+            width: 100%;
+            height: 42px;
+            background: #f1961f;
+            border: none;
+            outline: none;
+            border-radius: .375rem;
+            box-shadow: 0 0 10px rgba(0,0,0,.1);
+            cursor: pointer;
+            font-size: 16px;
+            color: #ffffff;
+            font-weight: 600;
+        }
+        .wrapper .btn {
+            width: 100%;
+            height: 42px;
+            border: none;
+            outline: none;
+            border-radius: .375rem;
+            box-shadow: 0 0 10px rgba(0,0,0,.5);
+            cursor: pointer;
+            background: #ffffff;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .back{
+            background-color: rgb(241, 150, 31);
+            border-radius: 4px;
+            text-align: center;
+            width: 100%;            
+            padding: 4px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .home{
+            color: #fff;
+            text-decoration: none;
+ 
+        }
+        </style>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="/myaction.php" name="myFrom" onsubmit="return validateFrom()" method="post">
+
+            <h1 class="uppercase text-center">Sign Up</h1>
+
+            <div class="input-box regform" id="name">
+                <label class="fname">Name</label>
+                <input type="text" name="fname" placeholder="Enter Your Full Name" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box regform" id="email">
+                <label class="fmail">Email</label>
+                <input type="text" name="fmail" placeholder="Enter Your Valid Email" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box regform" id="phone">
+                <label class="fphone">Mobile</label>
+                <input type="number" name="fphone" placeholder="Enter Your Valid Mobile No" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <label class="fpassword">Enter New Password</label>
+                <input type="password" name="fpassword" placeholder="Password" required>
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+            <div class="input-box">
+                <label class="fcpassword">Re Enter New Password</label>
+                <input type="password" name="fcpassword" placeholder="Password" required>
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember Me </label>
+            </div>
+            <button type="submit" class="btn-l">Sign Up</button>
+            <div class="or">OR</div>
+            <button type="submit" class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="g-img"><path d="M16.318 13.714v5.484h9.078c-0.37 2.354-2.745 6.901-9.078 6.901-5.458 0-9.917-4.521-9.917-10.099s4.458-10.099 9.917-10.099c3.109 0 5.193 1.318 6.38 2.464l4.339-4.182c-2.786-2.599-6.396-4.182-10.719-4.182-8.844 0-16 7.151-16 16s7.156 16 16 16c9.234 0 15.365-6.49 15.365-15.635 0-1.052-0.115-1.854-0.255-2.651z"></path></svg>
+            </button>
+
+            <div class="register-link">
+                <p>Have An Account?<a href="./Login_Page.html"> Login</a></p>
+            </div>
+            <div><br></div>
+        </form>
+        <div class="back">
+            <p class="tohome">Back to <a href="index.html" class="home">Home</a></p>
+        </div>
+    </div>
+</body>
+</html>
