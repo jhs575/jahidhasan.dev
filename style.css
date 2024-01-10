@@ -1218,6 +1218,13 @@ body.nav-active .nav__list-item:nth-child(10) {
   width: 100%;
   object-fit: cover;
 }
+.portfolio-item{
+  transition: transform 0.6s ease-out;
+}
+.portfolio-item:hover{
+  transform: scale(0.95);
+  box-shadow: 0 0 15px 7px #00000030;
+}
 
 .portfolio-item .portfolio-item img {
   transition: transform 0.6s ease-out;
