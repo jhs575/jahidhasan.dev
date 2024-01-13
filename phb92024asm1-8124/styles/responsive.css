@@ -1,0 +1,304 @@
+@media screen and (max-width:576px) {
+    .container {
+        max-width: 565px;
+           width: 96%;
+    }
+    .banner {
+        max-width: 565px;
+        background-size: cover;
+    }
+    .banner-bg {
+        max-height: 180px;
+        height: 70%;
+    }
+    .fs-32 {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+    }
+    .fs-72 {
+        font-size: 31px;
+        font-weight: 500;
+        line-height: 35px;
+    }
+    .pt-100 {
+        padding-top: 40px;
+    }
+    .pt-177 {
+        padding-top: 30px;
+    }
+    .pb-177 {
+        padding-bottom: 40px;
+    }
+    .pb-120 {
+        padding-bottom: 30px;
+    }
+    .mt-50 {
+        margin-top: 10px;
+    }
+    /* 65% off offer */
+    .img-center {
+        justify-content: center;
+        max-width: 400px;
+        max-height: 95%;
+    }
+    .fs-88 {
+        font-size: 38px;
+        font-weight: 500;
+    }
+    .fs-24 {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .mb-48 {
+        margin-bottom: 21px;
+    }
+    .mt-120 {
+        margin-top: 52px;
+    }
+    .fs-48 {
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .fs-32a {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 25px;
+    }
+    .herobg {
+        max-width: 565px;
+        background-size: cover;
+        max-height: 180px;
+        height: 70%;
+    }
+    .left {
+        max-width: 306px;
+        margin: 35px 0 0 56px;
+    }
+    .fs-64 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 38px;
+    }
+    .fs-18 {
+        font-size: 12px;
+        font-weight: 200;
+        line-height: 10px;
+    }
+    .w-92 {
+        width: 62%;
+    }
+    .w-100 {
+        display: none;
+    }
+    .join-btn {
+        font-size: 14px;
+        font-weight: 400;
+        padding: 8px 16px;
+        margin-left: 0px;
+        margin-top: 6px;
+        margin-bottom: 10px;
+    }
+    .join-btn2 {
+        font-size: 14px;
+        font-weight: 400;
+        margin: 28px auto 50px auto;
+        padding: 8px 16px;
+        cursor: pointer;
+    }
+    .y2024 {
+        top: 20px;
+        right: 60px;
+        width: 20%;
+    }
+    .flex-col {
+        flex-direction: column;
+    }
+    #coming-soon {
+        margin-top: 35px !important;
+        text-align: center;
+    }
+    .w-33 {
+        max-width: 400px;
+        width: 100%;
+        max-height: 400px;
+        align-items: center;
+    }
+    .fs-48a {
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .fs-20 {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .circle {
+        padding: 10px;
+        width: 60%;
+    }
+    .d-flex {
+        align-items: center;
+    }
+    .ml-60 {
+        margin-left: 10px;
+    }
+    #happy2024 {
+        margin-top: 35px !important;
+        text-align: center;
+    }
+    .tt-cap {
+        text-align: center;
+    }
+    .hny {
+        display: none;
+    }
+    .gift-box {
+        display: none;
+    }
+    .discount {
+        top: 10%;
+        right: 65%;
+        width: 35%;
+    }
+    .bg-red-img {
+        display: none;
+    }
+    .shopping-bag {
+        width: 100%;
+        border-radius: 16px;
+        align:center;
+    }
+    .email {
+        border-radius: 25px 0 0 25px;
+        padding: 10px 0 10px 30px;
+        max-width: 300px;
+    }
+    .sub-btn {
+        border-radius: 0 25px 25px 0;
+        padding: 10px 0px;
+        max-width: 120px;
+    }
+    .w-28 {
+        max-width: 400px;
+        width: 35%;
+        margin-bottom: 10px;
+    }
+    .justfy-c-b {
+        text-align: center;
+    }
+    .footer {
+        padding-top: 40px !important;
+    }
+    .best-gift {
+        margin-top: 700px;
+    }
+    .w-68 {
+        max-width: 570px;
+        width:100%;  
+    }
+
+}
+
+
+
+@media screen and (min-width:576px) and (max-width:768px) {
+    .container {
+        max-width: 760px;
+        width: 96%;
+    }
+
+    .banner {
+        max-width: 758px;
+        background-size: cover;
+    }
+
+    .banner-bg {
+        max-height: 380px;
+        height: 70%;
+    }
+
+    .fs-32 {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 18px;
+    }
+
+    .fs-72 {
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 35px;
+    }
+
+    .pt-177 {
+        padding-top: 80px;
+    }
+
+    .mt-50 {
+        margin-top: 25px;
+    }
+
+    .mb-16 {
+        margin-bottom: 25px;
+    }
+
+    .gift-box {
+        display: none;
+    }
+
+    .bg-red-img {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+    .container {
+        max-width: 985px;
+        width: 96%;
+    }
+
+    .banner {
+        max-width: 980px;
+        background-size: cover;
+    }
+
+    .banner-bg {
+        max-height: 900px;
+        height: 100%;
+    }
+
+    .fs-32 {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 18px;
+    }
+
+    .fs-72 {
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 35px;
+    }
+
+    .pt-177 {
+        padding-top: 80px;
+    }
+
+    .pb-177 {
+        padding-bottom: 275px;
+    }
+
+    .mt-50 {
+        margin-top: 25px;
+    }
+
+    .mb-16 {
+        margin-bottom: 25px;
+    }
+
+    .bg-red-img {
+        display: none;
+    }
+}
