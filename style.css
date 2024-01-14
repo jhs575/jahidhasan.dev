@@ -108,6 +108,9 @@ CSS STRUCTURE:
     --header-height: 100px;
     --header-height-min: 80px;
   }
+  .display-1{
+    font-size: 38px !important;
+  }
 }
 
 /* Theme Colors */
@@ -1802,6 +1805,10 @@ article.post-item {
 }
 .sphere3 {
   animation: sphere 1.2s 0.8s ease-in-out infinite;
+}
+
+.rotate180{
+  transform: rotateY(180deg);
 }
 
 @keyframes sphere {
