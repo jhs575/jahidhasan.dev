@@ -1,0 +1,414 @@
+/* Hamburger Menu */
+  .dropdown {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 99999;
+    right: 10px;
+    top: 10px;
+  }
+  
+  .hamburger {
+    align-self: flex-end;
+    display: none;
+  }
+  
+  label {
+    cursor: pointer;
+  }
+  
+  input[type=checkbox] + label .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #cccccc;
+    margin: 4px;
+    transition: all 0.2s;
+  }
+  input[type=checkbox] + label .top-bar {
+    transform: rotate(0);
+  }
+  input[type=checkbox] + label .middle-bar {
+    opacity: 1;
+  }
+  
+  input[type=checkbox]:checked + label .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
+  input[type=checkbox]:checked + label .middle-bar {
+    opacity: 0;
+  }
+  input[type=checkbox]:checked + label .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
+  .mobile-menu{
+    width: 200px;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    right: -200px;
+    top: 0px;
+    padding: 3rem;
+    transition: all ease 400ms;
+  }
+
+  input[type=checkbox]:checked ~ .mobile-menu{
+    right:0px;
+  }
+
+  .mobile-menu ul{
+    margin-top: 10rem;
+    display: block;
+  }
+
+  .mobile-menu ul li{
+    cursor: pointer;
+    margin: 5px 0px;
+    background-color: gray;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 10px;
+  }
+
+/* Hamburger Menu */
+
+@media screen and (max-width:550px) {
+    :root{
+        font-size: 5.5px;
+    }
+    .container{
+    max-width: 450px;
+    width: 90%;
+    }
+    .nav-bar{
+        flex-direction: column;
+    }
+
+    .desktop-nav{
+        display: none !important;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .msg-box{
+        width: 100%;
+    }
+    .page-title img{
+        width: 80px;
+    }
+    .page-title h2, .orange{
+        font-size: 22px;
+    }
+    .page-title{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .banner {
+        margin-top:17px;
+        border-radius: 10px;
+        background-clip: content-box;
+    }
+    .banner-text {
+        max-width: 205px;
+        width: 100%;
+        padding-top: 32px;
+        padding-bottom: 8px;
+    }
+    .banner-p {
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 32px;
+        width: 90%;
+        max-width: 350px;
+    }
+    .input-place {
+        flex-direction: column;
+        max-width: 310px;
+        width: 90%;
+        align-items: center;
+        padding: 16px;
+    }
+    .input-place input,
+    select {
+        padding-left: 1rem;
+        font-size: 1rem;
+        width: 100%;
+        border-radius: 0.5rem;
+        border: 0;
+        font-family: var(--mulish);
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(19, 19, 24, 0.50);
+        padding: 10px;
+    }
+    .btn-primary {
+        width: 100%;
+        border-radius: 8px;
+    }
+    .d-flex {
+        flex-direction: column;
+    }
+    .tours {
+        margin-top: 24px;
+    }
+    .tour-text h1 {
+        font-size: 20px;
+    }
+    .tour-text p {
+        margin: 16px 0px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .tours .container {
+        gap: 0px;
+        margin-bottom: 24px;
+    }
+    .tours .container ul li {
+        margin-bottom: 16px;
+        font-size: 14px;
+        line-height: 24px;
+        margin-left: 14px;
+    }
+    .tours .container button {
+        font-size: 20px;
+        width: 80%;
+        max-width: 174px;
+        padding: 14px 34px;
+        margin-bottom: 24px;
+    }
+    .tour-img, img{
+        width: 90%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    .destination .container h1 {
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .destination .container p {
+        font-size: 14px;
+        max-width: 350px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    
+    .card-title {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .destination-card {
+        width: 90%;
+        height: 176px;
+    }
+    .choose-us .container h1 {
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .choose-us .container p {
+        font-size: 14px;
+        max-width: 350px;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 16px;
+    }
+    .card {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .choose-card img{
+        width: 48px;
+    }
+    .choose-card h3 {
+        font-size: 20px;
+    }
+    .choose-card p {
+        text-align: left !important;
+        margin: 0 0 0 0 !important;
+    }
+    .discount-title {
+        font-size: 20px;
+    }
+    .discounts {
+        margin-top: 24px;
+    }
+    .discount-subtitle {
+        font-size: 14px;
+        line-height: 26px;
+        max-width: 350px;
+        width: 90%;
+    }
+    .deals {
+        gap: 16px;
+    }
+    .deals-1 {
+        justify-content: center;
+        padding: 187px 16px 16px 16px;
+        border-radius: 16px;
+    }
+    .deals-2 {
+        justify-content: center;
+        padding: 187px 16px 16px 16px;
+        border-radius: 16px;
+    }
+    .deals-3 {
+        justify-content: center;
+        padding: 187px 16px 16px 16px;
+        border-radius: 16px;
+    }
+    
+    .deals-card {
+        border-radius: 16px;
+        border: 2px solid #FFF;
+        max-width: 350px;
+        padding: 25px;
+    }
+    .deal-description {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+    .deal-description p {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .deals-card h1 {
+        font-size: 20px;
+    }
+    .deals-card p {
+        font-family: var(--mulish);
+        color: #5A5A5D;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        margin-bottom: 1rem;
+    }
+    .deals-card .deal-description .color-primary {
+        font-size: 24px;
+    }
+    .deal-description {
+        gap: 10px;
+        width: 450px;
+    }
+    .deals-card .color-primary, span {
+        font-size: 16px;
+        font-weight: 800;
+    }
+    .deal-btn{
+        width: 130px;
+        padding: 9px 20px 8px 21px;
+    }
+    .packages{
+        display: none;
+    }
+    .form {
+        width: 380px;
+        margin: 25px auto 45px;
+    }
+    .msg-box {
+        width: 400px;
+        margin: 24px auto;
+        border-radius: 16px;
+    }
+    .contact h2 {
+        font-size: 20px;
+        font-weight: 800;
+        margin-top: 45px;
+    }
+    .msg1 {
+        font-size: 16px;
+        font-family: var(--mulish);
+        font-weight: 700;
+        padding-bottom: 10px;
+        padding-top: 8px;
+    }
+    .video .d-flex{
+        flex-direction: column;
+        gap: 24px;
+    }
+    .video-text h1 {
+        font-size: 20px;
+    }
+    .video-text p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .video .container ul li {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .video .container .video-text button {
+        font-size: 16px;
+        width: 174px;
+    }
+    .video{
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .video .container .video-img{
+        display: flex;
+        margin: o auto;
+        justify-content: center;
+    }
+    .video .container{
+        margin-bottom: 24px;
+    }
+    .nw-promo {
+        max-width: 214px;
+        bottom: 32px;
+        right: 40px;
+        border-radius: 16px;
+    }
+    .nw-promo-title {
+        font-size: 16px;
+    }
+    
+    .nw-promo-subtitle {
+        font-size: 21px;
+    }
+    .newsletter{
+        flex-direction: column;
+    }
+    .newsletter-section {
+        margin-bottom: 24px;
+    }
+    .newsletter-img {
+        max-width: 350px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        margin: auto;
+    }
+    
+    .footer-container p {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-size: 14px;
+    }
+    .footer-title {
+        padding: 33px 0 0 0;
+    }
+    .footer-title .orange{
+        font-size: 21px;
+    }
+    .footer-title h1{
+        font-size: 21px;
+    }
+    .footer-title img {
+        width: 10rem;
+    }
+    .footer-description {
+        line-height: 24px;
+        font-size: 14px;
+        font-family: var(--mulish);
+        font-weight: 400;
+        margin: 3px auto;
+        width: 100%;
+        max-width: 287px;
+    }
+    
+}

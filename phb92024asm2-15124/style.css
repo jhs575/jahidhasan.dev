@@ -1,0 +1,803 @@
+:root {
+    --primary-color: #FF5400;
+    --secondary-color: #5A5A5D;
+    --mulish: 'Mulish', sans-serif;
+    --inter: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.divider {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    height: 1px;
+    flex-shrink: 0;
+    background: linear-gradient(90deg, rgba(192, 204, 218, 0.10) 0%, rgba(192, 204, 218, 0.60) 50.38%, rgba(192, 204, 218, 0.10) 100%);
+}
+
+.nw-divider {
+    margin-bottom: 24px;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.orange {
+    color: var(--primary-color) !important;
+    font-weight: 700 !important;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.color-primary {
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 1.25rem;
+}
+/* navigation section Start */
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.page-title{
+    display: flex;
+    align-items: center;
+}
+.page-title img{
+    width: 6rem;
+}
+.page-links ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2.75rem;
+}
+.page-links ul li {
+    color: var(--Dark-02, #424247);
+    text-align: center;
+    font-family: var(--mulish);
+    font-size: 1.125rem;
+    font-weight: 400;
+    list-style: none;
+}
+/* navigation section end */
+/* -------------------------------------------------------------------------------------- */
+/* banner section start  */
+.banner {
+    margin-top: 114px;
+    border-radius: 1rem;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00)),
+        url("images/banner.png");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.banner p {
+    margin: 0 auto;
+}
+.banner-text {
+    color: white;
+    font-family: var(--mulish);
+    font-size: 4rem;
+    font-weight: 800;
+    max-width: 596px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 106px;
+    padding-bottom: 16px;
+}
+
+.banner-p {
+    padding-top: 10px;
+    color: #FFF;
+    text-align: center;
+    font-family: var(--mulish);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 48px !important;
+    width: 100%;
+    max-width: 676px;
+    margin: 0 auto;
+}
+
+.input-place {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.30);
+    max-width: 800px;
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.pb-106 {
+    padding-bottom: 83px;
+}
+
+.input-place input,
+select {
+    padding-left: 1rem;
+    font-size: 1rem;
+    width: 174px;
+    border-radius: 0.5rem;
+    border: 0;
+    font-family: var(--mulish);
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(19, 19, 24, 0.50);
+    padding: 10px;
+}
+
+::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(19, 19, 24, 0.50);
+}
+
+.btn-primary {
+    padding: 1rem 2.125rem;
+    background-color: var(--primary-color);
+    border: 0;
+    color: #FFF;
+    border-radius: .5rem;
+    width: 174px;
+    cursor: pointer;
+}
+.btn-primary:hover {
+    background-color: #e64d00;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.321);
+}
+
+/* banner section end  */
+/* ---------------------------------------------------------------------------- */
+/* tours section start  */
+.tours {
+    margin-top: 100px;
+}
+
+.tour-text h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: var(--mulish);
+    font-weight: 800;
+}
+
+.tour-text p {
+    margin: 24px 0px;
+    font-size: 1rem;
+    font-family: var(--mulish);
+    font-weight: 400;
+    line-height: 1.625rem;
+    color: rgba(19, 19, 24, 0.70);
+}
+
+.tours .container {
+    gap: 53px;
+    margin-bottom: 100px;
+}
+
+.tours .container ul li {
+    font-family: var(--mulish);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgba(19, 19, 24, 0.70);
+}
+
+.tours .container button {
+    font-size: 1.25rem;
+    font-family: var(--mulish);
+    font-weight: 800;
+}
+
+/* tours section end  */
+/* -------------------------------------------------------------------------------- */
+/* destination section start  */
+.destination .container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.destination .container h1 {
+    color: #131318;
+    font-family: var(--mulish);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.destination .container p {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: var(--mulish);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 3rem;
+    max-width: 643px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.card-title {
+    width: 200px;
+    text-align: center;
+    font-size: 1.75rem;
+    font-family: var(--mulish);
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.maldives {
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%),
+        url("images/maldiv.png");
+    flex-grow: 1;
+    height: 300px;
+
+
+}
+
+.indonesia {
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%),
+        url("images/indonesia.png");
+    flex-grow: 1;
+    height: 300px;
+}
+
+.destination-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    border-radius: 16px;
+}
+
+.srilanka {
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%),
+        url("images/srilanka.png");
+    flex-grow: 5.7;
+    height: 286px;
+}
+
+.north-america {
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%),
+        url("images/north-america.png");
+    flex-grow: 9;
+    height: 286px;
+}
+
+.kashmir {
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%),
+        url("images/kasmir.png");
+    flex-grow: 2.5;
+    height: 286px;
+}
+
+.bangladesh {
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%),
+        url("images/bangladesh.png");
+    flex-grow: 1;
+    height: 300px;
+}
+
+.bandorban {
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%),
+        url("images/bandarban.png");
+    flex-grow: 1.7;
+    height: 300px;
+}
+
+/* destination section end  */
+/* ------------------------------------------------------------------------------------------- */
+/* choose-us section start  */
+.choose-us .container h1 {
+    font-size: 2.5rem;
+    font-family: var(--mulish);
+    font-weight: 800;
+    text-align: center;
+}
+
+.choose-us .container p {
+    font-size: 1rem;
+    font-family: var(--mulish);
+    font-weight: 400;
+    text-align: center;
+    max-width: 643px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+}
+
+.choose-card {
+    margin-top: 24px;
+    max-width: 573px;
+    width: 100%;
+    padding: 30px;
+
+}
+
+.choose-card p {
+    text-align: left !important;
+}
+
+.choose-card h3 {
+    font-family: var(--mulish);
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.hotels {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.maps {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.discount {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+
+/* choose-us section end  */
+/* --------------------------------------------------------------------------------------------- */
+/* contact us section start*/
+.form {
+    width: 700px;
+    margin: 100px auto;
+}
+
+.msg-box {
+    height: 100%;
+    width: 1170px;
+    margin: 100px auto;
+    border-radius: 1rem;
+    background-color: #ffffffdd;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.150);
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    font-family: var(--mulish);
+    font-weight: 800;
+    text-align: center;
+    margin-top: 5rem;
+    text-transform: capitalize;
+}
+
+.msg {
+    display: flex;
+    flex-direction: column;
+}
+
+.msg1 {
+    font-size: 16px;
+    font-family: var(--mulish);
+    font-weight: 700;
+    padding-bottom: 10px;
+    padding-top: 8px;
+}
+
+.mt {
+    padding-left: 16px;
+    border-radius: 5px;
+    height: 30px;
+    border: 0;
+    background-color: #e7e7fa6c;
+}
+
+.mt1 {
+    padding-left: 16px;
+    border-radius: 5px;
+    height: 30px;
+    border: 0;
+    background-color: #e7e7fa6c;
+}
+
+.mt2 {
+    padding: 8px 16px;
+    height: 96px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #e7e7fa6c;
+}
+
+.send {
+    background-color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    margin: 10px auto 0 auto;
+    height: 40px;
+    border: 1px solid #e7e7fa6c;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.send:hover {
+    background-color: #e64d00;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.150);
+}
+
+/* contact us section end*/
+/* ------------------------------------------------------------------------------------------------- */
+/* discount section start  */
+.discounts {
+    margin-top: 100px;
+}
+
+.discount-title {
+    color: #131318;
+    text-align: center;
+    font-family: var(--mulish);
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.discount-subtitle {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: var(--mulish);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    max-width: 643px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.deals {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.deals-1 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 3.5rem;
+    background: url(images/satorini.png), lightgray 50% / cover no-repeat;
+    border-radius: 1rem;
+}
+.deals-2 {
+    display: flex;
+    justify-content: flex-start;
+    padding: 3.5rem;
+    background: url(images/satorini-2.png), lightgray 50% / cover no-repeat;
+    border-radius: 1rem;
+}
+.deals-3 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 3.5rem;
+    background: url(images/satorini.png), lightgray 50% / cover no-repeat;
+    border-radius: 1rem;
+}
+
+.deals-card {
+    border-radius: 1rem;
+    border: 2px solid #FFF;
+    max-width: 579px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 3.125rem;
+}
+
+.deal-description {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.deal-description p {
+    margin-right: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--mulish);
+    margin-bottom: 1.625rem;
+}
+
+.deals-card h1 {
+    color: #131318;
+    font-family: var(--mulish);
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.deals-card p {
+    font-family: var(--mulish);
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 1rem;
+}
+.deals-card .color-primary {
+    font-family: var(--mulish);
+}
+.deal-btn{
+    margin-top: 1.5rem;
+}
+.packages{
+    font-family: var(--mulish);
+    font-size: 20px;
+    font-weight: 800;
+    width: 100%;
+    max-width: 210px;
+    padding: 14px 22px 13px 21px;
+    display: flex;
+    margin: 48px auto 0 auto;
+}
+
+/* discount section end  */
+/* ------------------------------------------------------------------------------------------------- */
+/* video section start  */
+.video {
+    margin-top: 100px;
+}
+
+.video-text h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: var(--mulish);
+    font-weight: 800;
+}
+
+.video-text p {
+    margin: 24px 0px;
+    font-size: 1rem;
+    font-family: var(--mulish);
+    font-weight: 400;
+    line-height: 1.625rem;
+    color: rgba(19, 19, 24, 0.70);
+}
+
+.video .container {
+    gap: 53px;
+    margin-bottom: 100px;
+}
+
+.video .container ul li {
+    font-family: var(--mulish);
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 22px;
+    color: #131318;
+}
+
+.video .container button {
+    font-size: 1.25rem;
+    font-family: var(--mulish);
+    font-weight: 800;
+}
+/* video section end  */
+/* ---------------------------------------------------------------------------------------------------- */
+/* newsletter section start  */
+.newsletter-section {
+    margin-bottom: 100px;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.newsletter-txt {
+    border-radius: 16px;
+    border: 1px solid red;
+    max-width: 474px;
+    width: 100%;
+    padding: 2.5rem;
+
+}
+
+.newsletter-img {
+    max-width: 672px;
+    width: 100%;
+    position: relative;
+}
+
+.nw-title {
+    color: #131318;
+    font-family: "Mulish";
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.nw-p {
+    color: #5A5A5D;
+    font-family: var(--mulish);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-top: 10px;
+    margin-bottom: 24px;
+}
+
+.newsletter-txt input {
+    display: flex;
+    max-width: 393px;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    padding: 16px 20px auto 16px;
+    border: 0;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.nw-input {
+    font-size: 1rem;
+    width: 174px;
+    border-radius: 8px;
+    border: 0;
+    font-family: var(--mulish);
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(19, 19, 24, 0.50);
+    padding: 15px;
+    margin-bottom: 1rem !important;
+}
+
+.nw-btn {
+    width: 100%;
+    text-align: center;
+    font-family: var(--mulish);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    margin-top: 0.5rem;
+}
+
+.nw-promo {
+    width: 100%;
+    max-width: 324px;
+    text-align: center;
+    position: absolute;
+    bottom: 59px;
+    right: 9px;
+    rotate: -20deg;
+    border-radius: 1rem;
+    cursor: default !important;
+}
+.nw-promo:hover{
+    background-color: #FF5400 !important;
+    box-shadow: 0 0 0 0 transparent !important;
+}
+
+.nw-promo-title {
+    color: #FFF;
+    font-family: var(--mulish);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.nw-promo-subtitle {
+    color: #FFF;
+    font-family: var(--mulish);
+    font-size: 32px;
+    font-weight: 800;
+}
+
+/* newsletter section end  */
+/* ------------------------------------------------------------------------------------------------------ */
+/* footer section start  */
+.footer-container {
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: rgba(19, 19, 24, 0.05);
+}
+.footer-container p {
+    color: var(--secondary-color);
+    text-align: center;
+    margin-top: 50px;
+    font-family: var(--inter);
+    margin-bottom: 6.5rem;
+}
+.footer-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    padding: 50px 0 0 0;
+}
+.footer-title h1{
+    font-size: 2rem;
+    font-weight: 800 !important;
+    font-family: var(--mulish);
+    color: #131318;
+}
+.footer-title img {
+    width: 7rem;
+}
+.footer-description {
+    line-height: 24px;
+    font-size: 1rem;
+    font-family: var(--mulish);
+    font-weight: 400;
+    margin: 3px auto;
+    width: 100%;
+    max-width: 769px;
+}
+.footer-media {
+    font-size: 32px;
+    margin-bottom: 3.1rem;
+}
+.footer-media a {
+    text-decoration: none;
+    color: black;
+}
+.footer-icon {
+    padding: 8px;
+}
+.footer-icon:hover{
+    color: #FF5400;
+    cursor: pointer;
+}
+/* footer section end  */
+/* ____________________________________________________________________________________________________________ */
+/* mobile device responsive start*/
+@media screen and (max-width:550px) {
+        
+}
+/* mobile device responsive end*/
