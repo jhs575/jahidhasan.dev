@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/color.css">
     <link rel="stylesheet" href="styles/align.css">
+    <link rel="stylesheet" href="styles/responsive.css">
 </head>
 
 <body>
@@ -24,6 +25,7 @@
         <h3 class="white tx-center pt-177 fs-32 mb-16 m-0-auto ff-merri">Happy New Year</h3>
         <h1 class="white tx-center pb-177 fs-72 mw-632 m-0-auto ff-merri">New Year Party Celebration</h1>
     </div>
+    <!-- 65% off offer -->
     <div class="container mt-120">
         <h1 class="fs-88 tx-center red m-0 mb-48 ff-inter">65% OFF</h1>
         <p class="fs-24 tx-center red m-0 upper mb-16 ff-inter">our holiday deals are better</p>
@@ -57,9 +59,9 @@
     </section>
     <section class="offers">
         <div class="container">
-            <div class="row d-flex">
+            <div class="row d-flex flex-col">
                 <div class="col w-33">
-                    <p class="upper fs-24 red ff-inter" style="margin: 104px 0 16px;">new best offer</p>
+                    <p id="coming-soon" class="upper fs-24 red ff-inter" style="margin: 104px 0 16px;">new best offer</p>
                     <h1 class="fs-48a tt-cap ff-merri m-0">coming soon</h1>
                     <p class="fs-20 ff-inter">New year surprises are coming soon. If you want to get offer please follow
                         our website.</p>
@@ -68,15 +70,15 @@
                     <img class="m-0-auto circle" src="resources/ellipse-1.png" alt="">
                 </div>
                 <div class="col w-33 ml-60">
-                    <p class="fs-48 red ff-inter" style="margin: 104px 0 16px;">2024</p>
+                    <p id="happy2024" class="fs-48 red ff-inter" style="margin: 104px 0 16px;">2024</p>
                     <p class="fs-20 ff-inter">Don't miss out on the chance to start the year with fantastic deals.</p>
-                    <img style="margin-top: 30px;" src="resources/group-96.png" alt="">
+                    <img class="hny" style="margin-top: 30px;" src="resources/group-96.png" alt="">
                 </div>
             </div>
         </div>
     </section>
     <section class="holiday mt-120">
-        <div class="container main-bottom">
+        <div class="container">
             <p class="upper fs-24 ff-inter tx-center m-0" style="margin-bottom:16px;"> what is functional</p>
             <h1 class="fs-72 m-0 ff-merri tx-center red" style="margin-bottom:28px;">Holidays<span class="black"> Sale
                     50%</span></h1>
@@ -86,17 +88,19 @@
                 with unbeatable savings! Explore our exclusive New Year Sale and treat yourself to fantastic discounts
                 on a wide range of products. Hurry, seize the opportunity to start the year with both style and savings!
             </p>
-            <img src="resources/rectangle1.png" alt="" align="right"><img class="discount" src="resources/group44.png"
-                alt=""></img>
-            <img src="resources/rectangle2.png" alt="" class=""> <img class="gift-box" src="resources/box.png"
-                alt=""></img>
+            <div class="main-bottom">
+                <img class="shopping-bag" src="resources/rectangle1.png" alt="" align="right">
+                <img class="discount" src="resources/group44.png"alt=""></img>
+                <img class="bg-red-img" src="resources/rectangle2.png" alt="" class="">
+                <img class="gift-box" src="resources/box.png"alt=""></img>
+            </div>
         </div>
     </section>
     <section class="portfolio mt-120">
         <div class="container">
-            <p class="upper fs-24 red ff-inter mb-16">the best gift</p>
+            <p class="upper fs-24 best-gift red ff-inter tx-center mb-16"> the best gift</p>
             <h1 class="fs-48a tt-cap ff-merri m-0 mb-22">our awesome portfolio</h1>
-            <p class="fs-20 ff-inter w-68 mb-48">Elevate your celebrations with our Happy New Year Product Showcase!
+            <p class="fs-20 ff-inter w-68 mb-48 tx-center">Elevate your celebrations with our Happy New Year Product Showcase!
                 Discover a curated collection of festive essentials and unique gifts, joy to your festivities.</p>
         </div>
         <div class="container product">
@@ -138,9 +142,9 @@
         </div>
     </section>
     <section class="footer mt-120">
-        <div class="bg-black pt-120 pb-120">
+        <div class="bg-black pt-120 footer pb-120">
             <div class="container">
-                <div class="row d-flex justfy-c-b bb-1 pb-50">
+                <div class="row d-flex flex-col justfy-c-b bb-1 pb-50">
                     <div class="col w-28 m-0">
                         <p class="white m-0 fs-24">44, Ati Bazar Road, Keranigonj Model, Dhaka -1210 ,Bangladesh, Asia,
                             Earth, Universe</p>
@@ -158,7 +162,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row social bb-1 p-48">
+                <div class="row social bb-1 p-48 ">
                     <div class="col media m-10">
                         <a href="https://www.facebook.com/jhs575">
                             <img src="resources/facebook.png" alt="">
@@ -180,7 +184,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="row d-flex justfy-c-b pt-50">
+                <div class="row d-flex flex-col justfy-c-b pt-50">
                     <div class="col w-28 m-0">
                         <p class="white m-0 fs-24">2024, All Rights Reserved.</p>
                     </div>
